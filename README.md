@@ -1,16 +1,20 @@
 # Briand Alpa – Personal Website
 
-A modern, responsive personal portfolio built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
+A modern, responsive personal portfolio built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and and a customized **shadcn UI** component system.
 
 ## Features
 
 - ⚡ Fast and lightweight (Vite + React 19)
 - 🎨 Custom design with Tailwind CSS
 - 🧩 Modular components: Hero, About, Skills, Projects, Experience, Testimonials, Contact
-- 📬 Contact form with validation (Zod) and toast notifications (Sonner)
-- 🧭 Routing with React Router
-- 🖼️ SVG icons via Lucide
-- ✨ Animations with tw-animate-css
+- 📬 Contact form with validation (Zod), toast notifications (Sonner), and Formspree integration for secure, serverless email handling
+
+## UI & Component System
+
+This project uses shadcn/ui as the component foundation, then applies additional stylistic refinements using TweakCN to create a consistent, polished design without heavy custom CSS.
+
+- shadcn UI for accessible, flexible components
+- TweakCN for fine-tuning Tailwind utility combinations
 
 ## Getting Started
 
@@ -55,7 +59,6 @@ src/
   App.tsx
   pages/
     Index.tsx
-    NotFound.tsx
   components/
     Hero.tsx
     About.tsx
@@ -83,7 +86,7 @@ public/
 
 - Validates input with Zod
 - Shows toast notifications with Sonner
-- (Optional) Integrate with Formspree, Resend, or your own backend for email delivery
+- Integrated Formspree to handle secure, serverless email submissions for the contact form
 
 ## License
 
